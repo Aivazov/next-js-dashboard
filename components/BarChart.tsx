@@ -36,6 +36,19 @@ export default function BarChart() {
         },
       ],
     });
+    setChartOptions({
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+        title: {
+          display: true,
+          text: 'Daily Revenue',
+        },
+      },
+      maintainAspectRatio: false,
+      responsive: true,
+    });
   }, []);
 
   return (
