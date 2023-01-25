@@ -1,7 +1,9 @@
 import React, { ReactNode } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { RxSketchLogo, RxDashboard } from 'react-icons/rx';
+import { RxSketchLogo, RxDashboard, RxPerson } from 'react-icons/rx';
+import { FiSettings } from 'react-icons/fi';
+import { HiOutlineShoppingBag } from 'react-icons/hi';
 
 interface Props {
   children?: ReactNode;
@@ -21,6 +23,21 @@ export default function Sidebar({ children }: { children: any }) {
           <Link href="/">
             <div className="bg-gray-100 hover:bg-gray-200 my-4 cursor-pointer p-3 rounded-lg inline-block">
               <RxDashboard size={20} />
+            </div>
+          </Link>
+          <Link href="/customers">
+            <div className="bg-gray-100 hover:bg-gray-200 my-4 cursor-pointer p-3 rounded-lg inline-block">
+              <RxPerson size={20} />
+            </div>
+          </Link>
+          <Link href="/orders">
+            <div className="bg-gray-100 hover:bg-gray-200 my-4 cursor-pointer p-3 rounded-lg inline-block">
+              <HiOutlineShoppingBag size={20} />
+            </div>
+          </Link>
+          <Link href="/">
+            <div className="bg-gray-100 hover:bg-gray-200 my-4 cursor-pointer p-3 rounded-lg inline-block">
+              <FiSettings size={20} />
             </div>
           </Link>
         </div>
