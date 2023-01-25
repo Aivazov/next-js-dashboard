@@ -15,6 +15,11 @@ export default function RecentOrders() {
             <div className="bg-purple-100 p-3 rounded-lg">
               <FaShoppingBag className="text-purple-800" />
             </div>
+            <div>
+              <p>${order.total}</p>
+              <p>{order.name.first}</p>
+            </div>
+            <p>{order.date}</p>
           </li>
         ))}
       </ul>
