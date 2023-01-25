@@ -10,7 +10,14 @@ export default function customers() {
         <Header />
       </div>
       <div className="p-4">
-        <div className="bg-white f-full m-auto p-4 border rounded-lg overflow-y-auto"></div>
+        <div className="bg-white f-full m-auto p-4 border rounded-lg overflow-y-auto">
+          <div>
+            <span>Name</span>
+            <span>Status</span>
+            <span>Date</span>
+            <span>Pay Method</span>
+          </div>
+        </div>
       </div>
     </div>
   );
