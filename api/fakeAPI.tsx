@@ -3,20 +3,20 @@ export const persons = [
     id: 1,
     name: {
       first: 'John',
-      last: 'Behringer',
+      last: 'Jameson',
     },
-    total: 2795.95,
+    total: 1735.55,
     status: 'On Hold',
-    method: 'PayPal',
+    method: 'MasterCard',
     date: '15 Minutes ago',
   },
   {
     id: 2,
     name: {
-      first: 'Chris',
+      first: 'Bruce',
       last: 'Willis',
     },
-    total: 1195.95,
+    total: 1025.45,
     status: 'Processing',
     method: 'PayPal',
     date: '23 Minutes ago',
@@ -25,9 +25,9 @@ export const persons = [
     id: 3,
     name: {
       first: 'Sarah',
-      last: 'Adams',
+      last: 'Connor',
     },
-    total: 495.85,
+    total: 450.15,
     status: 'Completed',
     method: 'Visa',
     date: '1 Hour ago',
@@ -35,21 +35,21 @@ export const persons = [
   {
     id: 4,
     name: {
-      first: 'Joseph',
-      last: 'Choo',
+      first: 'James',
+      last: 'Woo',
     },
-    total: 150.45,
+    total: 1520.45,
     status: 'Processing',
     method: 'MasterCard',
-    date: '1 Hour ago',
+    date: '2 Hour ago',
   },
   {
     id: 5,
     name: {
       first: 'Steve',
-      last: 'Harding',
+      last: 'Jobs',
     },
-    total: 175.25,
+    total: 1750.25,
     status: 'On Hold',
     method: 'PayPal',
     date: '2 Hour ago',
@@ -57,19 +57,19 @@ export const persons = [
   {
     id: 6,
     name: {
-      first: 'Laura',
-      last: 'Croft',
+      first: 'Shaquille',
+      last: 'O`Neal',
     },
     total: 1295.75,
     status: 'Completed',
     method: 'Check',
-    date: '3 Hour ago',
+    date: '5 Hour ago',
   },
   {
     id: 7,
     name: {
       first: 'Michael',
-      last: 'Jones',
+      last: 'Jordan',
     },
     total: 89.95,
     status: 'Completed',
@@ -80,7 +80,7 @@ export const persons = [
     id: 8,
     name: {
       first: 'James',
-      last: 'Bond',
+      last: 'Blond',
     },
     total: 689.45,
     status: 'Completed',
@@ -90,10 +90,10 @@ export const persons = [
   {
     id: 9,
     name: {
-      first: 'Haley',
+      first: 'Harvey',
       last: 'Whiting',
     },
-    total: 14.99,
+    total: 140.99,
     status: 'Completed',
     method: 'PayPal',
     date: '1 Day ago',
@@ -101,12 +101,12 @@ export const persons = [
   {
     id: 10,
     name: {
-      first: 'Tim',
-      last: 'Thomas',
+      first: 'Din',
+      last: 'Wesley',
     },
-    total: 218.99,
+    total: 2181.99,
     status: 'Completed',
     method: 'MasterCard',
-    date: '1 Day ago',
+    date: '3 Day ago',
   },
 ];
