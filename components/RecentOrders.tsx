@@ -15,11 +15,13 @@ export default function RecentOrders() {
             <div className="bg-purple-100 p-3 rounded-lg">
               <FaShoppingBag className="text-purple-800" />
             </div>
-            <div>
-              <p>${order.total}</p>
-              <p>{order.name.first}</p>
+            <div className="pl-4">
+              <p className="text-gray-800 font-bold">${order.total}</p>
+              <p className="text-gray-500 text-sm">{order.name.first}</p>
             </div>
-            <p>{order.date}</p>
+            <p className="lg:flex md:hidden absolute text-sm right-6">
+              {order.date}
+            </p>
           </li>
         ))}
       </ul>
