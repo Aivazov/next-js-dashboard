@@ -12,11 +12,11 @@ export default function customers() {
       </div>
       <div className="p-4">
         <div className="bg-white w-full m-auto p-4 border rounded-lg overflow-y-auto">
-          <div className="my-3 p-2 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer">
+          <div className="my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer">
             <span>Name</span>
-            <span>Status</span>
-            <span>Date</span>
-            <span>Pay Method</span>
+            <span className="sm:text-left text-right">Status</span>
+            <span className="hidden md:grid">Date</span>
+            <span className="hidden md:grid">Pay Method</span>
           </div>
         </div>
       </div>
