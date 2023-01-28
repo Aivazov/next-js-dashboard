@@ -1,5 +1,5 @@
 import React from 'react';
-import { persons } from '../api/fakeAPI';
+import { persons } from '../pages/api/fakeAPI';
 import { FaShoppingBag } from 'react-icons/fa';
 
 export default function RecentOrders() {
