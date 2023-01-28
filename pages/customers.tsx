@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from '../components/Header';
 import { BsPersonFill, BsThreeDotsVertical } from 'react-icons/bs';
-import { persons } from '../api/fakeAPI';
+import { persons } from '../pages/api/fakeAPI';
+// import { persons } from '../api/fakeAPI';
 
 export default function customers() {
   const headerTitle = 'Customers';

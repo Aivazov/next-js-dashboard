@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import { FaShoppingBag } from 'react-icons/fa';
 import { BsThreeDotsVertical } from 'react-icons/bs';
-import { persons } from '../api/fakeAPI';
+import { persons } from '../pages/api/fakeAPI';
 
 export default function orders() {
   const headerTitle = 'Orders';
