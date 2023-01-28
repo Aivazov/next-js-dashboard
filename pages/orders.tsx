@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import { FaShoppingBag } from 'react-icons/fa';
+import { BsThreeDotsVertical } from 'react-icons/bs';
 import { persons } from '../api/fakeAPI';
 
 export default function orders() {
@@ -16,7 +17,7 @@ export default function orders() {
             <span>Order</span>
             <span className="sm:text-left text-right">Status</span>
             <span className="hidden md:grid">Last Order</span>
-            <span className="hidden md:grid">Pay Method</span>
+            <span className="hidden sm:grid">Pay Method</span>
           </div>
           <ul>
             {persons.map((order, id) => (
@@ -32,19 +33,24 @@ export default function orders() {
                     <p className="text-gray-800 font-bold">${order.total}</p>
                     <p className="text-gray-700 text-sm">{order.name.first}</p>
                   </div>
-                  <p className="text-gray-600 sm:text-left text-right">
-                    <span
-                      className={
-                        order.status === 'Processing'
-                          ? 'bg-green-200 p-2 rounded-lg'
+                </div>
+                <p className="text-gray-600 sm:pl-16 md:pl-0 sm:text-left text-right">
+                  <span
+                    className={
+                      order.status === 'Processing'
+                        ? 'bg-green-200 p-2 rounded-lg'
                         : order.status === 'Completed'
-                          ? 'bg-blue-200 p-2 rounded-lg'
-                          : 'bg-yellow-200 p-2 rounded-lg'
-                      }
-                    >
-                      {order.status}
-                    </span>
-                  </p>
+                        ? 'bg-blue-200 p-2 rounded-lg'
+                        : 'bg-yellow-200 p-2 rounded-lg'
+                    }
+                  >
+                    {order.status}
+                  </span>
+                </p>
+                <p className="hidden md:flex">{order.date}</p>
+                <div className="hidden md:flex items-center justify-between  ">
+                  <p>{order.method}</p>
+                  <BsThreeDotsVertical />
                 </div>
               </li>
             ))}
