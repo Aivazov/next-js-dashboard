@@ -20,7 +20,7 @@ ChartJS.register(
   Legend
 );
 
-export default function BarChart() {
+export default function BarChart(): JSX.Element {
   const [chartData, setChartData] = useState({ datasets: [] });
   const [chartOptions, setChartOptions] = useState({});
 
