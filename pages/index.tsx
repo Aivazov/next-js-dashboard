@@ -1,4 +1,4 @@
-import BarChart from '@/components/BarChart';
+import BarChart from '@/components/BarChart.js';
 import RecentOrders from '@/components/RecentOrders';
 import TopCards from '@/components/TopCards';
 import Head from 'next/head';

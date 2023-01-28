@@ -19,6 +19,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Header.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Header.tsx", "components/BarChart.js"],
   "exclude": ["node_modules"]
 }
