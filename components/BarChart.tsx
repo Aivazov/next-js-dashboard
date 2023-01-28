@@ -34,7 +34,7 @@ export default function BarChart() {
           borderColor: 'rgb(53, 162, 235)',
           backgroundColor: 'rgba(53, 162, 235, 0.4)',
         },
-      ] as never[],
+      ] as any[],
     });
     setChartOptions({
       plugins: {
