@@ -6,6 +6,9 @@ export const persons = [
       last: 'Jameson',
     },
     total: 1735.55,
+    contacts: {
+      mail: '@gmail.com',
+    },
     status: 'On Hold',
     method: 'MasterCard',
     date: '15 Minutes ago',
@@ -17,6 +20,9 @@ export const persons = [
       last: 'Willis',
     },
     total: 1025.45,
+    contacts: {
+      mail: '@gmail.com',
+    },
     status: 'Processing',
     method: 'PayPal',
     date: '23 Minutes ago',
@@ -28,6 +34,9 @@ export const persons = [
       last: 'Connor',
     },
     total: 450.15,
+    contacts: {
+      mail: '@gmail.com',
+    },
     status: 'Completed',
     method: 'Visa',
     date: '1 Hour ago',
@@ -39,6 +48,9 @@ export const persons = [
       last: 'Woo',
     },
     total: 1520.45,
+    contacts: {
+      mail: '@gmail.com',
+    },
     status: 'Processing',
     method: 'MasterCard',
     date: '2 Hour ago',
@@ -50,6 +62,9 @@ export const persons = [
       last: 'Jobs',
     },
     total: 1750.25,
+    contacts: {
+      mail: '@gmail.com',
+    },
     status: 'On Hold',
     method: 'PayPal',
     date: '2 Hour ago',
@@ -61,6 +76,9 @@ export const persons = [
       last: 'O`Neal',
     },
     total: 1295.75,
+    contacts: {
+      mail: '@gmail.com',
+    },
     status: 'Completed',
     method: 'Check',
     date: '5 Hour ago',
@@ -72,6 +90,9 @@ export const persons = [
       last: 'Jordan',
     },
     total: 89.95,
+    contacts: {
+      mail: '@gmail.com',
+    },
     status: 'Completed',
     method: 'MasterCard',
     date: '3 Hour ago',
@@ -83,6 +104,9 @@ export const persons = [
       last: 'Blond',
     },
     total: 689.45,
+    contacts: {
+      mail: '@gmail.com',
+    },
     status: 'Completed',
     method: 'Visa',
     date: '7 Hour ago',
@@ -94,6 +118,9 @@ export const persons = [
       last: 'Whiting',
     },
     total: 140.99,
+    contacts: {
+      mail: '@gmail.com',
+    },
     status: 'Completed',
     method: 'PayPal',
     date: '1 Day ago',
@@ -105,6 +132,9 @@ export const persons = [
       last: 'Wesley',
     },
     total: 2181.99,
+    contacts: {
+      mail: '@gmail.com',
+    },
     status: 'Completed',
     method: 'MasterCard',
     date: '3 Day ago',

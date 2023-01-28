@@ -33,12 +33,14 @@ export default function customers() {
                   </p>
                 </div>
                 <p className="text-gray-500 sm:text-left text-right">
-                  {person.status}
+                  {person.contacts.mail}
                 </p>
                 <p className="hidden md:flex">{person.date}</p>
                 <div className="sm:flex items-center justify-between hidden">
                   <p>{person.method}</p>
-                  <BsThreeDotsVertical className="bg-gray-50 hover:bg-gray-200 rounded-lg" />
+                  <div className="bg-gray-100 hover:bg-gray-200 p-1 rounded-lg">
+                    <BsThreeDotsVertical />
+                  </div>
                 </div>
               </li>
             ))}
