@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Header({ title }) {
+export default function Header({ title }: any) {
   let username = 'Tim';
   return (
     <div className="flex justify-between px-4 pt-4">
