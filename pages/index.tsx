@@ -1,4 +1,4 @@
-import BarChart from '@/components/BarChart.js';
+import BarChart from '@/components/BarChart.tsx';
 import RecentOrders from '@/components/RecentOrders';
 import TopCards from '@/components/TopCards';
 import Head from 'next/head';

@@ -26,15 +26,15 @@ export default function BarChart() {
 
   useEffect(() => {
     setChartData({
-      labels: ['Mon', 'Tues', 'Wes', 'Thurs', 'Fri', 'Sat', 'Sun'],
+      labels: ['Mon', 'Tues', 'Wes', 'Thurs', 'Fri', 'Sat', 'Sun'] as string[],
       datasets: [
         {
           label: 'Sales $',
-          data: [11945, 12551, 11233, 22994, 15423, 12123, 14785],
+          data: [11945, 12551, 11233, 22994, 19423, 12123, 14785],
           borderColor: 'rgb(53, 162, 235)',
           backgroundColor: 'rgba(53, 162, 235, 0.4)',
         },
-      ],
+      ] as never[],
     });
     setChartOptions({
       plugins: {
