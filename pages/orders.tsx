@@ -17,7 +17,7 @@ export default function orders() {
             <span>Order</span>
             <span className="sm:text-left text-right">Status</span>
             <span className="hidden md:grid">Last Order</span>
-            <span className="hidden sm:grid">Pay Method</span>
+            <span className="hidden md:grid">Pay Method</span>
           </div>
           <ul>
             {persons.map((order, id) => (
@@ -34,7 +34,7 @@ export default function orders() {
                     <p className="text-gray-700 text-sm">{order.name.first}</p>
                   </div>
                 </div>
-                <p className="text-gray-600 sm:pl-16 md:pl-0 sm:text-left text-right">
+                <p className="text-gray-600 sm:pl-16 md:pl-0 sm:text-left text-right max-sm:text-sm">
                   <span
                     className={
                       order.status === 'Processing'
@@ -48,7 +48,7 @@ export default function orders() {
                   </span>
                 </p>
                 <p className="hidden md:flex">{order.date}</p>
-                <div className="hidden md:flex items-center justify-between  ">
+                <div className="hidden md:flex items-center justify-between">
                   <p>{order.method}</p>
                   <BsThreeDotsVertical />
                 </div>
