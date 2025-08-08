@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Bar } from 'react-chartjs-2';
-
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -10,6 +9,7 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
+import { ChartData, ChartOptions } from 'chart.js';
 
 ChartJS.register(
   CategoryScale,
@@ -20,8 +20,21 @@ ChartJS.register(
   Legend
 );
 
+interface ChartDataInterface {
+  labels: string[];
+  datasets: {
+    label: string;
+    data: number[];
+    borderColor: string;
+    backgroundColor: string;
+  }[];
+}
+
 export default function BarChart(): JSX.Element {
-  const [chartData, setChartData] = useState({ datasets: [] });
+  const [chartData, setChartData] = useState<ChartDataInterface>({
+    labels: [],
+    datasets: [],
+  });
   const [chartOptions, setChartOptions] = useState({});
 
   useEffect(() => {
@@ -53,7 +66,7 @@ export default function BarChart(): JSX.Element {
 
   return (
     <>
-      <div className="bg-white w-full rounded-lg md:col-span-2 relative m-auto border h-[50vh] lg:h-[70vh]">
+      <div className='bg-white w-full rounded-lg md:col-span-2 relative m-auto border h-[50vh] lg:h-[70vh]'>
         <Bar data={chartData} options={chartOptions} />
       </div>
     </>
